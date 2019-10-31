@@ -1,0 +1,8 @@
+<!DOCTYPE html>
+{% block footer %}
+    {% if now %}
+    <p style="font-family: 'DejaVu Sans';">现在时刻:{{ now }}</p>
+    {% else %}
+    <p style="font-family: 'DejaVu Sans'">本文来自网络，如有侵权请来信</p>
+    {% endif %}
+{% endblock %}

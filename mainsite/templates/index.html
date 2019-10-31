@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+{% extends 'base.html' %}
+{% block title %}欢迎光临我的博客{% endblock %}
+{% block headmessage %}
+
+<h3 style="font-family: 'DejaVu Sans Mono';">本站文章列表</h3>
+{% endblock %}
+{% block content %}
+    {% for post in posts %}
+        <p style="font-family: 'DejaVu Sans';font-size: 16pt;font-weight: bold;">
+            <a href="/post/{{ post.slug }}">{{ post.title }}</a>
+        </p>
+    {% endfor %}
+{% endblock %}
